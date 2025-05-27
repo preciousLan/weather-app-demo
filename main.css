@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+:root{
+  --body-color: #222;
+  --text-color: #222;
+}
+
+.white-theme{
+  --body-color: #ebfffc;
+  --text-color: #fff;
+}
+
+body {
+  background: var(--body-color);
+  transition: 0.5s ease-in;
+}
+
+.button{
+  display: flex;
+  justify-content: right;
+}
+
+#dark-btn{
+  width: 45px;
+  background: #bcb6b6;
+ border-radius: 15px;
+  padding: 2px 3px;
+  margin-bottom: 30px;
+  display: flex;
+  transition: padding-left 0.5s ease-in, background 0.5s ease-in;
+  cursor: pointer;
+ 
+}
+ 
+#dark-btn span{
+  display: inline-block;
+  width: 18px;
+  background-color: #222;
+  height: 18px;
+  border-radius: 50%;
+}
+  
+#dark-btn.dark-btn-off{
+background: #ebfffc;
+padding-left: 23px;
+}
+ 
+ 
+
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  padding: 40px 35px ;
+  box-shadow: 0 0 10px rgba(46, 32, 32, 0.5);
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  border-radius: 20px;
+  margin: 100px auto;
+  color: #fff;
+}
+.search {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.search input {
+  width: 100%;
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #ebfffc;
+  font-size: 18px;
+  color: #333;
+  border-radius: 25px;
+  height: 50px;
+}
+
+.search button {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: #ebfffc;
+  cursor: pointer;
+  width: 62px;
+  height: 50px;
+}
+.search button img {
+  width: 16px;
+}
+
+.weather{
+  display:none;
+}
+
+.weather-icon {
+  display: block;
+  margin: auto;
+  width: 170px;
+  margin-top: 30px;
+}
+.weather h1 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: color 0.5s ease-in;
+}
+.weather h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: var(--text-color);
+  transition: color 0.5s ease-in;
+  
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  padding: 0 20px;
+  gap: 15px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  color: var(--text-color);
+  transition: color 0.5s ease-in;
+}
+.col img {
+  width: 40px;
+  
+}
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
+  color: var(--text-color);
+  transition: color 1.0s ease-out;
+}
+
+.error{
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+.err{
+  margin-top: 20px;
+  color: #333;
+  font-size: 15px;
+}
